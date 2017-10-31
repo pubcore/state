@@ -1,0 +1,40 @@
+{
+  "scripts": {
+    "test": "mocha --watch --require babel-register --recursive",
+    "build": "babel src --out-dir js",
+    "prepublish": "npm run build",
+    "watch": "watch \"npm run build\" ./src"
+  },
+  "main": "js/index.js",
+  "license": "MIT",
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "plugins": [
+      "transform-object-rest-spread"
+    ]
+  },
+  "name": "pubcore-state",
+  "version": "1.0.0",
+  "description": "access global state properties by dot-notation string",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pubcore/state.git"
+  },
+  "author": "pubcore",
+  "bugs": {
+    "url": "https://github.com/pubcore/state/issues"
+  },
+  "homepage": "https://github.com/pubcore/state#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "chai": "^4.1.2",
+    "eslint": "^4.10.0",
+    "eslint-plugin-mocha": "^4.11.0",
+    "mocha": "^4.0.1",
+    "watch": "^1.0.2"
+  }
+}
