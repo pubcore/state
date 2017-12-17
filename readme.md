@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/pubcore/state.svg?branch=master)](https://travis-ci.org/pubcore/state)
+
 ### Access property of global state by dot-notation string
 
 #### Install
