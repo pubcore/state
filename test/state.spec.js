@@ -1,4 +1,4 @@
-import {expect} from 'chai'
+import { strict as assert } from 'assert'
 import S, {setStore} from '../src/index'
 
 setStore({
@@ -13,10 +13,10 @@ setStore({
 })
 
 describe('pubcore-store', () => {
-	it('returns undefined if key does not exists', () => {
-		expect(S('does.not.exist')).to.be.undefined
-	})
-	it('returns value', () => {
-		expect(S('uri.query.foo')).to.equal('bar')
-	})
+	it('returns undefined if key does not exists', () =>
+		assert.deepStrictEqual(S('does.not.exist'),undefined))
+	it('returns object value', () =>
+		assert.deepStrictEqual(S('uri.query.foo'),'bar'))
+	it('returns object value', () =>
+		assert.deepStrictEqual(S('uri.query'),{foo:'bar'}))
 })
