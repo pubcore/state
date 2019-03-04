@@ -4,20 +4,20 @@
 
 #### Install
 
-	npm install --dev pubcore-state
+	npm install --save @pubcore/state
 
 #### How to use example, in context with a redux store
 
 Initialization in main script is required
 
-	import {setStore} from 'pubcore-state'
+	import {setStore} from '@pubcore/state'
 
 	//we expect a reduxStore has been created before
 	setStore(reduxStore)
 
 If we want to read a property of global State ...
 
-	import S from 'pubcore-state'
+	import S from '@pubcore/state'
 
 	var book = S('room.shelf.b1')
 
