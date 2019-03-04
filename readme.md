@@ -23,3 +23,5 @@ If we want to read a property of global State ...
 
 	//returns undefined if a key does not exist
 	S('key.does.not.exist') === undefined
+
+Since 1.1.0 it uses lodash.get internal. You can now use same string notation like in lodash.get. Have a look at the [lodash documentation](https://lodash.com/docs/#get).
