@@ -15,7 +15,7 @@
       "@babel/plugin-proposal-object-rest-spread"
     ]
   },
-  "name": "pubcore-state",
+  "name": "@pubcore/state",
   "version": "1.1.0",
   "description": "access global state properties by dot-notation string",
   "repository": {
