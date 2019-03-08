@@ -19,4 +19,14 @@ describe('pubcore-store', () => {
 		assert.deepStrictEqual(S('uri.query.foo'),'bar'))
 	it('returns object value', () =>
 		assert.deepStrictEqual(S('uri.query'),{foo:'bar'}))
+	it('check global state', () => {
+		setStore({
+			getState: () => ({state: 'global'}),
+			dispatch: () => {}
+		},{globalState: true})
+		assert.deepStrictEqual(S('state'),'global')
+	})
+	it('check global state directly', () => {
+		assert.deepStrictEqual(global['@pubcore/state'].getState(),{state:'global'})
+	})
 })
