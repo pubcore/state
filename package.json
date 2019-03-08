@@ -16,7 +16,7 @@
     ]
   },
   "name": "@pubcore/state",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "access global state properties by dot-notation string",
   "repository": {
     "type": "git",
