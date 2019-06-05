@@ -28,14 +28,14 @@
   },
   "homepage": "https://github.com/pubcore/state#readme",
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.3.4",
-    "@babel/plugin-proposal-object-rest-spread": "^7.3.4",
-    "@babel/preset-env": "^7.3.4",
-    "@babel/register": "^7.0.0",
-    "eslint": "^4.19.1",
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
+    "eslint": "^5.16.0",
     "eslint-plugin-mocha": "^4.12.1",
-    "mocha": "^4.1.0",
+    "mocha": "^6.1.4",
     "watch": "^1.0.2"
   },
   "dependencies": {

@@ -3,11 +3,11 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.dispatch = exports.setStore = void 0;
+exports["default"] = exports.dispatch = exports.setStore = void 0;
 
 var _lodash = _interopRequireDefault(require("lodash.get"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var storeKey = '@pubcore/state';
 var store = null;
@@ -44,10 +44,10 @@ var _default = function _default() {
       throw new TypeError('INVALID_SLICE_KEY');
     }
 
-    return (0, _lodash.default)(store.getState(), sliceKey + '');
+    return (0, _lodash["default"])(store.getState(), sliceKey + '');
   }
 
   return store.getState();
 };
 
-exports.default = _default;
+exports["default"] = _default;
